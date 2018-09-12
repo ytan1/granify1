@@ -1,6 +1,6 @@
 import io from 'socket.io-client'
 //the ip address of the api server
-export const socket = io('ws://localhost:3030')
+export const socket = io('ws://localhost:4700')
 const REGISTER = 'register'
 const ADD = 'add'
 const DELETE = 'delete'
