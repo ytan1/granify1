@@ -17,7 +17,7 @@ export const item = (state = initState, action) => {
 
 export const addItem = (info) => {
     return (dispatch) => {
-        return axios.post('http://localhost:4700/item', info)
+        return axios.post('http://35.182.229.247:4700/item', info)
             .then(res => {
                 if(res.data.code == 0){
                     console.log('add sucess')
@@ -30,7 +30,7 @@ export const addItem = (info) => {
 
 export const fetchItem = (info) => {
     return dispatch => {
-        return axios.get('http://localhost:4700/item')
+        return axios.get('http://35.182.229.247:4700/item')
             .then(res => {
                 if(res.data.code == 0){
                     dispatch(fetchItemSuccess(res.data.items))
@@ -50,7 +50,7 @@ const fetchItemSuccess = (data) => {
 
 export const deleteItem = (id) => {
     return dispatch => {
-        return axios.post('http://localhost:4700/delete', {id})
+        return axios.post('http://35.182.229.247:4700/delete', {id})
                 .then(res => {
                     if(res.data.code == 0){
                         console.log("Delete sucess")

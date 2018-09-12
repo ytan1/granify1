@@ -1,6 +1,6 @@
 import io from 'socket.io-client'
 //the ip address of the api server
-export const socket = io.connect('http://localhost:4700')
+export const socket = io.connect('http://35.182.229.247:4700')
 const REGISTER = 'register'
 const ADD = 'add'
 const DELETE = 'delete'
