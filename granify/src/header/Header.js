@@ -15,9 +15,9 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="p-3 col-md-4 bg-light header-item" onClick={() => this.navTo('add')}>Add</div>      
-        <div className="p-3 col-md-4 bg-light header-item" onClick={() => this.navTo('display')}>Display</div>      
-        <div className="p-3 col-md-4 bg-light header-item" onClick={() => this.navTo('delete')}>Delete</div>      
+        <div id="add" className="p-3 col-md-4 bg-light header-item" onClick={() => this.navTo('add')}>Add</div>      
+        <div id="display" className="p-3 col-md-4 bg-light header-item" onClick={() => this.navTo('display')}>Display</div>      
+        <div id="delete" className="p-3 col-md-4 bg-light header-item" onClick={() => this.navTo('delete')}>Delete</div>      
       </div>
     );
   }

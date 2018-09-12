@@ -61,6 +61,7 @@
     "server": "cross-env NODE_ENV=test nodemon --exec babel-node server/server.js"
   },
   "devDependencies": {
+    "assert": "^1.4.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "cross-env": "^5.2.0"
   },

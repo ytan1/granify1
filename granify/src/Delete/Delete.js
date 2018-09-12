@@ -28,8 +28,8 @@ export default class Delete extends React.Component {
                             onClick={() => this.delete(v._id)}>
                           <div className="card-body">
                               <p>id: {v._id}</p>
-                              <p>Name: {v.name}</p>
-                              <p>Phone: {v.phone}</p>
+                              <p  className="card-name">Name: {v.name}</p>
+                              <p  className="card-phone">Phone: {v.phone}</p>
                           </div>
                       </div>)
           })
