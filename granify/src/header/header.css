@@ -1,4 +1,7 @@
+.header-item{
+    transition: all .3s ease;
+}
 .header-item:hover{
     cursor: pointer;
-    box-shadow: 3px 2px 3px 3px gray;
+    background: #91bbff !important;
 }
