@@ -6,9 +6,14 @@ const models = {
     item:{
         name: {type:String, require:true},
         phone: {type: String, require: true}
+    },
+    record:{
+        add: {type: Number, default: 0},
+        del: {type: Number, default: 0}
     }
 }
 
 module.exports = {
-    itemModel: mongoose.model('Item', new mongoose.Schema(models['item']))
+    itemModel: mongoose.model('Item', new mongoose.Schema(models['item'])),
+    recordModel: mongoose.model('Record', new mongoose.Schema(models['record']))
 }
