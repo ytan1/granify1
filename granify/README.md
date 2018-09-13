@@ -6,3 +6,4 @@ To run it locally:
   
   Install selenium and webdrivers for tests.
   
+Thank you!
